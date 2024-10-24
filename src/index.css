@@ -15,6 +15,7 @@ code {
 #page-body{
   margin: 0 auto;
   width: 60%;
+  box-sizing: border-box;
 }
 
 a{
@@ -46,5 +47,110 @@ a{
       }
     }
     
+  }
+}
+
+.comment{
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+}
+.upvotes-section{
+  display: flex;
+  column-gap: 10px;
+
+  button{
+    color: #fff;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:hover{
+      background-color: rgb(71, 70, 70);
+    }
+  }
+}
+
+#add-comment-form{
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+
+  input{
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 410px;
+
+    &:focus{
+      outline: none;
+      border-color: #4A90E2;
+      box-shadow: 0 0 5px rgba(74,144,226,0.5);
+    }
+  }
+  textarea{
+    display: block;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+
+    &:focus{
+      outline: none;
+      border-color: #4A90E2;
+      box-shadow: 0 0 5px rgba(74,144,226,0.5);
+    }
+  }
+  button{
+    color: #fff;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+
+
+    &:hover{
+      background-color: rgb(71, 70, 70);
+    }
+  }
+}
+
+.login-from{
+  width: 400px;
+  row-gap: 20px;
+  box-sizing: border-box;
+  input{
+    display: block;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 60%;
+
+    &:focus{
+      outline: none;
+      border-color: #4A90E2;
+      box-shadow: 0 0 5px rgba(74,144,226,0.5);
+    }
+  }
+  button{
+    color: #fff;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 10px;
+    &:hover{
+      background-color: rgb(71, 70, 70);
+    }
+  }
+  a{
+    color: blue;
   }
 }
