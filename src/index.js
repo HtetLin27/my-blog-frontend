@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAON3behr4ELp8f4h39Tlh6gWQ-s98q4Y8",
+  apiKey: process.env.REACT_APP_API_KEY,
   authDomain: "my-react-blog-9d323.firebaseapp.com",
   projectId: "my-react-blog-9d323",
   storageBucket: "my-react-blog-9d323.appspot.com",
